@@ -1,14 +1,15 @@
 package main
 
 import (
-	"github.com/juanmartinez503/Golang-Backend/cmd/api"
 	"log"
+	"github.com/JuanMartinez503/Golang-Backend/cmd/api"
 )
 func main() {
 	// Run the server
 	server := api.NewAPIServer(":8080", nil)
-	if err := server.run(); err != nil {
+	if err := server.Run(); err != nil {
 		log.Fatal(err)
 	}
+	
 	
 }
